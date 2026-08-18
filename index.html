@@ -20,7 +20,11 @@
       h3:first-of-type { margin-top: 0; }
       ul { margin: 8px 0; padding-left: 22px; }
       a { color: var(--accent); }
-      .contacts { display: flex; flex-wrap: wrap; gap: 12px 26px; }
+      .contact-section { text-align: center; }
+      .contact-section p { color: var(--muted); margin: 0 auto 20px; max-width: 560px; }
+      .contacts { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+      .contact-link { min-width: 230px; padding: 14px 22px; border: 1px solid var(--accent); border-radius: 999px; color: var(--accent); font-weight: 700; text-decoration: none; transition: .2s ease; }
+      .contact-link:hover { background: var(--accent); color: white; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(154, 94, 88, .2); }
       .portrait { width: 250px; aspect-ratio: 1; object-fit: cover; object-position: center 21%; border-radius: 50%; box-shadow: 0 14px 34px rgba(77, 53, 45, .18); }
       @media (max-width: 600px) { main { padding-top: 32px; } header { grid-template-columns: 1fr; gap: 22px; } .portrait { width: 180px; grid-row: 1; } h1 { font-size: 34px; } section { padding: 22px; } }
     </style>
@@ -63,11 +67,14 @@
           <li>«Гуманистическая психология» — 140 часов.</li>
           <li>«Методология ведения групповой работы и формирование навыка тренеров психологических программ» — 110 часов.</li>
         </ul>
-        <p><strong>Преподаватель очного курса «Интегративное психологическое консультирование. Гуманистический подход».</strong></p>
       </section>
-      <section>
-        <h3>Контакты</h3>
-        <div class="contacts"><span>Телефон: 8 920 961-46-09</span><a href="https://t.me/ChuparnovaTV">Telegram</a></div>
+      <section class="contact-section">
+        <h2>Связаться со мной</h2>
+        <p>Напишите или позвоните, чтобы задать вопрос или договориться о первой встрече.</p>
+        <div class="contacts">
+          <a class="contact-link" href="tel:+79209614609">Позвонить · 8 920 961-46-09</a>
+          <a class="contact-link" href="https://t.me/ChuparnovaTV">Написать в Telegram</a>
+        </div>
       </section>
     </main>
   </body>
